@@ -128,8 +128,8 @@ const MyAccount = () => {
               {displayName ? (
                 displayName[0].toUpperCase()
               ) : (
-                  <PersonIcon />
-                )}
+                <PersonIcon />
+              )}
             </Avatar>
           )}
           <div
@@ -169,7 +169,6 @@ const MyAccount = () => {
         </Paper>
         {
           <ImgageUploadDialog
-            isOpen={isImageDialogOpen}
             isOpen={isImageDialogOpen}
             handleClose={() => setImageDialogOpen(false)}
             handleCropSubmit={handleImageChange}
